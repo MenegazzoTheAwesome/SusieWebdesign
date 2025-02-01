@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Link image:  https://coloniacrash.wordpress.com/wp-content/uploads/2021/05/4398d4d3717bd0e84b3325cdaf95b83cdec7eeb9.jpg-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,70 @@
         body{
             background-color: #DE5C3E;           
         }
-        body h1, h2, p, ul {
-            color: #FFFFFF;
+
+        .top-section {
+            background-color: #fdfdfd;
+            width: 100%;
+            display: flex;
+            height: auto;
+        }
+        .text-section {
+            width: 35%;
+            padding: 20px;
+            background: radial-gradient(circle at center, #fdfdfd 0.25rem, #ff7979 0.25rem);
+            background-size: 0.5rem 0.5rem;
+            color: rgb(114, 5, 51);
+            position: relative;
+        }
+
+        .text-section h1, .text-section h2 {
+            color: #160909;
+        }
+        .image-section {
+            width: 65%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 1) 100%), url('https://coloniacrash.wordpress.com/wp-content/uploads/2021/05/4398d4d3717bd0e84b3325cdaf95b83cdec7eeb9.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        .image-section a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-indent: -9999px;
+        }
+        .parallelogram-container {
+            width: auto;
+            height: auto;
+            background: #f0f0f0;
+            transform: skew(-20deg);
+            padding: 2px;
+            margin: 2px 0;
+        }
+        .parallelogram-container * {
+            transform: skew(20deg);
         }
     </style>
 </head>
 <body>
-    <h1> Welcome mate! This is the site i'm gonna be making.</h1>
-    <h2> What to expect ??</h2>
-    <p> you will see....</p>
+    <div class="top-section">
+        <div class="text-section">
+            <div class="parallelogram-container"> 
+                <h1>Welcome mate! This is the site I'm gonna be making.</h1>
+                <h2>What to expect ??</h2>
+            </div>
+            <div class="parallelogram-container">
+                <p>You will see....</p>
+
+            </div>
+        </div>
+        <div class="image-section">
+            <a href="https://coloniacrash.wordpress.com/wp-content/uploads/2021/05/4398d4d3717bd0e84b3325cdaf95b83cdec7eeb9.jpg">Link to Image</a>
+        </div>
+    </div>
+
     <ul>
         <li>Art!</li>
         <li>Webdesign stuff i learn!!</li>
